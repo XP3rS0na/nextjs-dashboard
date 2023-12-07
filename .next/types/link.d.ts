@@ -75,7 +75,7 @@ declare module 'next/link' {
      * The path or URL to navigate to. This is the only required prop. It can also be an object.
      * @see https://nextjs.org/docs/api-reference/next/link
      */
-    href: __next_route_internal_types__.RouteImpl<RouteInferType> | UrlObject | string //Rajout de "string" pour autoriser les href dans app>ui>nav-links.tsx
+    href: __next_route_internal_types__.RouteImpl<RouteInferType> | UrlObject
   }
 
   export default function Link<RouteType>(props: LinkProps<RouteType>): JSX.Element
